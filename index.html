@@ -1,62 +1,41 @@
+<!doctype html>
+
 <meta charset="utf-8">
 <!-- responsive -->
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
+<!-- animate.css -->
+<link rel="stylesheet" href="assets/animate.min.css">
 
+<link rel="stylesheet" href="carousel-lite.css">
 <style>
   .holder {
     width: 100%;
-    min-height: 50px;
+    min-height: 150px;
   }
-  .holder:nth-child(1) {
+  li:nth-child(1)>.holder {
     background-color: green;
   }
-  .holder:nth-child(2) {
+  li:nth-child(2)>.holder {
     background-color: yellow;
   }
-  .holder:nth-child(3) {
+  li:nth-child(3)>.holder {
     background-color: blue;
   }
-  .holder:nth-child(4) {
+  li:nth-child(4)>.holder {
     background-color: purple;
   }
+  #demo {
+    overflow-x: hidden;
+    margin: 0 auto;
+    max-width: 600px;
+  }
 
-  .carousel {
-    position: relative;
-  }
-  .carousel ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  .carousel li {
-    list-style: none;
-    display: block;
-  }
-  .carousel-nav {
-    position: absolute;
-    z-index: 9;
-    right: 10px;
-    bottom: 6px;
-  }
-  .carousel-nav li {
-    display: inline-block;
-    zoom: 1;
-    border-radius: 20px;
-    cursor: pointer;
-    background-color: #ffba15;
-    margin: 5px 4px;
-    width: 8px;
-    height: 8px;
-    opacity: 0.5;
-  }
-  .carousel-nav li.active {
-    opacity: 1;
-  }
+  
 </style>
 
-<div class="carousel">
-  <ul class="carousel-screen">
+<div id="demo" class="carou">
+  <ul class="carou-screen">
     <li>
       <div class="holder"></div>
     </li>
@@ -69,9 +48,15 @@
     <li>
       <div class="holder"></div>
     </li>
-  </ul>
-  <ul class="carousel-nav">
-    <!-- inline to disable gaps -->
-    <li class="active"></li><li></li><li></li><li></li>
   </ul>
 </div>
+
+<!-- zepto -->
+<script src="assets/zepto.min.js"></script>
+<!-- animate-js -->
+<script src="assets/animate.js"></script>
+
+<script src="carousel-lite.js"></script>
+<script>
+  $('#demo.carou').carou()
+</script>
