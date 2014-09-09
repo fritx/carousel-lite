@@ -39,13 +39,9 @@
     right: 10px;
     bottom: 6px;
   }
-  .carousel-nav div {
+  .carousel-nav li {
     display: inline-block;
     zoom: 1;
-    margin: 0;
-  }
-  .carousel-nav div i {
-    display: block;
     border-radius: 20px;
     cursor: pointer;
     background-color: #ffba15;
@@ -54,7 +50,7 @@
     height: 8px;
     opacity: 0.5;
   }
-  .carousel-nav div.active i {
+  .carousel-nav li.active {
     opacity: 1;
   }
 </style>
@@ -74,8 +70,8 @@
       <div class="holder"></div>
     </li>
   </ul>
-  <div class="carousel-nav">
+  <ul class="carousel-nav">
     <!-- inline to disable gaps -->
-    <div class="active"><i></i></div><div><i></i></div><div><i></i></div><div><i></i></div>
-  </div>
+    <li class="active"></li><li></li><li></li><li></li>
+  </ul>
 </div>
