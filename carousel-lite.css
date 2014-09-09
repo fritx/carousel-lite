@@ -1,0 +1,38 @@
+.carou {
+  position: relative;
+}
+ul.carou-screen,
+ul.carou-nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+ul.carou-screen>li {
+  display: block;
+  width: 100%;
+  position: absolute;
+  visibility: hidden;
+}
+ul.carou-screen>li.active {
+  visibility: visible;
+}
+ul.carou-nav {
+  position: absolute;
+  z-index: 9;
+  right: 12px;
+  bottom: 12px;
+}
+ul.carou-nav>li {
+  display: inline-block;
+  zoom: 1;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #ffba15;
+  margin: 0 4px;
+  width: 12px;
+  height: 12px;
+  opacity: 0.5;
+}
+ul.carou-nav>li.active {
+  opacity: 1;
+}
