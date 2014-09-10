@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "main": [
     "carousel-lite.css",
-    "carousel-lite.js",
+    "carousel-lite.js"
   ],
-  "repository": "git@github.com:fritx/animate-js.git",
+  "repository": "git@github.com:fritx/carousel-lite.git",
   "dependencies": {
     "jquery": "~2.1.1",
     "animate.css": "~3.2.0",
